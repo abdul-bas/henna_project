@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646667608294",
+    "project_id": "henna-6c6ff",
+    "storage_bucket": "henna-6c6ff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646667608294:android:7756023a32c62a69de5b27",
+        "android_client_info": {
+          "package_name": "com.example.henna_by_basith"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV3P41wczdZhJq1NmKRFegH5ruLcIKxL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
