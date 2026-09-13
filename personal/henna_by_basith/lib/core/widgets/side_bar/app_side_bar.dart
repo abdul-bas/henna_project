@@ -5,13 +5,15 @@ import 'package:henna_by_basith/core/widgets/side_bar/brand.dart';
 import 'package:henna_by_basith/core/widgets/side_bar/profile_footer.dart';
 import 'package:henna_by_basith/core/widgets/side_bar/reserve_button.dart';
 import 'package:henna_by_basith/core/widgets/side_bar/side_bar_tile.dart';
+import 'package:henna_by_basith/features/bookings/view_model/dashboard_view_model.dart';
+import 'package:provider/provider.dart';
 
 
 class SidebarWidget extends StatelessWidget {
   final int activeIndex;
-  final ValueChanged<int>? onItemSelected;
+ 
 
-  const SidebarWidget({super.key, this.activeIndex = 1, this.onItemSelected});
+  const SidebarWidget({super.key, this.activeIndex = 1, });
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class SidebarWidget extends StatelessWidget {
                 return SidebarTile(
                  data: item,
                   selected: isDashboardHighlighted,
-                  onTap: () => onItemSelected?.call(index),
+                  onTap: () => context.read<DashboardViewModel>().selectSidebarIndex(index),
                 );
               },
             ),
