@@ -1,1 +1,0 @@
-enum ChartFilter { allRevenue, bridalArtistry, apothecary }
